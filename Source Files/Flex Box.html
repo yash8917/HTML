@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+</head>
+<style>
+    .container {
+        flex-wrap: wrap;
+        /*wrap means it is more wrap on the other devices's*/
+        border: 2px solid black;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        flex-direction: row;
+        flex-direction: column-reverse;
+        flex-direction: row;
+        /* wrap reverse */
+        flex-wrap: wrap;
+        /*  if we set the both property in flex direction and wrap then  
+                    flex-flow:row-reverse wrap; */
+
+        /* justify */
+        justify-content: center;
+        justify-content: space-between;
+        justify-content: space-evenly;
+        /*it will draw the space including the starting*/
+        /* to do the vertically center */
+        align-items: center;
+        align-items: flex-end;
+        align-items: flex-start;
+        align-items: stretch;
+    }
+
+    .item {
+        width: 100px;
+        height: 200px;
+        border: 3px solid grey;
+        margin: 10px;
+        background-color: yellowgreen;
+        padding: 10px;
+
+    }
+
+    #box1 {
+        /* order:5 ; */
+        /* jiski order jyada hogi vo last me aa jayega */
+        flex-grow: 4;
+    }
+
+    #box2 {
+        /* flex-grow: 5;
+        flex-shrink: 3; */
+        flex-basis: 32px;
+        /* when flex direction is set to row flex - basis  control the width */
+        /* when flex direction is set to column  flex - basis  control the height */
+        /*  */
+
+    }
+
+    #box3 {
+        flex-grow: 2;
+    }
+    #box4{
+              flex: 2 2 230px; /*grow shrink basis*/
+    }
+    #box5{
+        align-self: flex-end;
+        align-self: flex-start;
+        align-self: center;
+
+    }
+</style>
+
+<body>
+    <h1>This is the heading</h1>
+    <div class="container">
+        <div class="item" id="box1">FIrst box</div>
+        <div class="item" id="box2">second box</div>
+        <div class="item" id="box3">third box</div>
+        <div class="item" id="box4">fourth box</div>
+        <div class="item" id="box5"> fifth box</div>
+    </div>
+</body>
+
+</html>
