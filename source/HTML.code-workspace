@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\CSS"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "HTML",
+		"editor.mouseWheelZoom": true
+	}
+}
